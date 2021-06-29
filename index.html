@@ -5,30 +5,160 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Ping coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    html, 
+    body {
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 20px;
+      text-align: center;
+      height: 100%;
+    }
+
+    h2 {
+      margin: 6vh 0 3vh 0;
+    }
+
+    .body-container {
+      margin: auto;
+      min-height: 100%;
+      width:80%;
+    }
+
+    #square {color: hsl(223, 87%, 63%);}
+
+    #heading-grey {
+      color: hsl(0, 0%, 59%);
+      font-weight: 300;}
+
+    /* .sub-title { font-size: 0.8em;} */
+
+    p {
+      font-weight: 300;
+      margin-top: 2vh;
+    }
+
+    img {
+      width: 80%;
+    }
+    
+
+    .input-field {
+      display: flex;
+      margin: 2em;
+      justify-content: space-around;
+      align-items: center;
+    }
+    form {
+        width: 100%;
+    }
+
+    #email {
+      border-radius: 50px;
+      border-color: hsl(0, 0%, 59%);
+      width: 55%;
+      height: 38px;
+      padding-left: 20px;
+      font-size: 0.7em;
+    }
+
+    #btn-notify {
+      background-color: hsl(223, 87%, 63%);
+      color: #fff;
+      border-radius: 20px;
+      border: none;
+      height: 38px;
+      width: 25%;
+      box-shadow: 0 0 5px gray;
+    }
+
+    #btn-notify:hover {
+      background-color:hsl(223, 87%, 68%);
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 30px;
+      height: 80px;
+    }
+
+    @media (max-width: 375px) {
+      html, body {
+        display: flex;
+        flex-direction: column;
+        height: -80px;
+      }
+
+      .body-container {
+        margin-bottom: -100px;
+      }
+
+      .heading-container {
+        font-size: 12px;
+      }
+
+
+      .input-field {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #email {
+        width: 100%;
+      }
+      
+      #btn-notify{
+        width: 100%;
+        margin-top: 5vh;
+      }
+    }
+    
   </style>
 </head>
 <body>
+  <div class="body-container">
+    <div class="heading-container">
+      <h2>PING<span id="square">.</span> </h2>
+      <h1><span id="heading-grey">We are launching</span> soon!</h1>
 
-  We are launching soon!
+      <p class="sub-title">Subscribe and get notified</p>
+    </div>
+    
 
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
+    <div class="input-field">
+      <form action="">
+        <label for="email"></label>
+          <input type="email" placeholder="Your email address..." id="email" name="email" required>
+          <!-- <button type="button">Notify Me</button> -->
+          <input id="btn-notify" type="submit" value="Notify Me">
+      </form>
+    </div>
+    
+    <div class="img-container">
+      <img src="images/illustration-dashboard.png" alt="illustration-dashboard">
+    </div>
+  </div>
   <footer>
+    <p class="attribution">&copy; Copyright Ping. All rights reserved.</p>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Harper Wu</a>
     </p>
   </footer>
+  
+  
 </body>
 </html>
