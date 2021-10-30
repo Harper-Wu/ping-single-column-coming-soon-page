@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+html, 
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin: 6vh 0 3vh 0;
+}
+
+.body-container {
+  margin: auto;
+  width:80%;
+}
+
+#square {color: hsl(223, 87%, 63%);}
+
+#heading-grey {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;}
+
+/* .sub-title { font-size: 0.8em;} */
+
+p {
+  font-weight: 300;
+  margin-top: 2vh;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+
+ .input-field {
+  margin: 1em;
+} 
+
+form {
+    width: 100%;
+}
+
+#email {
+  border-radius: 50px;
+  border-color: hsl(0, 0%, 59%);
+  width: 55%;
+  height: 38px;
+  padding-left: 20px;
+  font-size: 0.7em;
+}
+
+#btn-notify {
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  height: 38px;
+  width: 15%;
+  box-shadow: 0 0 5px gray;
+}
+
+#btn-notify:hover {
+  background-color:hsl(223, 87%, 68%);
+  cursor: pointer;
+}
+
+footer {
+  height: 80px;
+}
+
+@media (max-width: 375px) {
+  html, body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading-container {
+    font-size: 12px;
+  }
+
+  #email {
+    width: 100%;
+  }
+  
+  #btn-notify{
+    width: 100%;
+    margin-top: 1em;
+  }
+}
