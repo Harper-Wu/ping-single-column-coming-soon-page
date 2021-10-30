@@ -25,7 +25,6 @@
       font-family: 'Libre Franklin', sans-serif;
       font-size: 20px;
       text-align: center;
-      height: 100%;
     }
 
     h2 {
@@ -34,7 +33,6 @@
 
     .body-container {
       margin: auto;
-      min-height: 100%;
       width:80%;
     }
 
@@ -52,16 +50,15 @@
     }
 
     img {
-      width: 80%;
+      max-width: 80%;
+      height: auto;
     }
     
 
-    .input-field {
-      display: flex;
-      margin: 2em;
-      justify-content: space-around;
-      align-items: center;
-    }
+     .input-field {
+      margin: 1em;
+    } 
+
     form {
         width: 100%;
     }
@@ -81,7 +78,7 @@
       border-radius: 20px;
       border: none;
       height: 38px;
-      width: 25%;
+      width: 15%;
       box-shadow: 0 0 5px gray;
     }
 
@@ -91,7 +88,6 @@
     }
 
     footer {
-      margin-top: 30px;
       height: 80px;
     }
 
@@ -110,22 +106,15 @@
         font-size: 12px;
       }
 
-
-      .input-field {
-        display: flex;
-        flex-direction: column;
-      }
-
       #email {
         width: 100%;
       }
       
       #btn-notify{
         width: 100%;
-        margin-top: 5vh;
+        margin-top: 1em;
       }
     }
-    
   </style>
 </head>
 <body>
@@ -141,9 +130,9 @@
     <div class="input-field">
       <form action="">
         <label for="email"></label>
-          <input type="email" placeholder="Your email address..." id="email" name="email" required>
-          <!-- <button type="button">Notify Me</button> -->
-          <input id="btn-notify" type="submit" value="Notify Me">
+        <input type="email" placeholder="Your email address..." id="email" name="email" required>
+        <!-- <button type="button">Notify Me</button> -->
+        <input id="btn-notify" type="submit" value="Notify Me">
       </form>
     </div>
     
